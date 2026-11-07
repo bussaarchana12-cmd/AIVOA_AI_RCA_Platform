@@ -1,0 +1,6 @@
+{
+  "name": "AIVOA.AI - Pharmaceutical Quality Intelligence & RCA Platform",
+  "description": "Enterprise AI-powered Root Cause Analysis (RCA) and CAPA platform for Active Pharmaceutical Ingredient (API) manufacturing with LangGraph-style workflow, Five Whys, Fishbone, and evidence review.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

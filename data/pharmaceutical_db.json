@@ -1,0 +1,387 @@
+{
+  "investigations": [
+    {
+      "id": "INV-2026-001",
+      "deviationRef": "DEV-API-2026-045",
+      "productName": "API-101 (Atorvastatin Calcium Trihydrate)",
+      "apiName": "Atorvastatin Calcium",
+      "batchNumber": "BATCH-2026-045",
+      "manufacturingStage": "Crystallization & Isolation",
+      "incidentDate": "2026-03-24",
+      "dateDetected": "2026-03-25",
+      "reportedBy": "Dr. Elena Rostova (QC Lead)",
+      "assignedInvestigator": "Marcus Vance (Senior Quality Investigator)",
+      "severity": "Major",
+      "priority": "High",
+      "status": "Under Review",
+      "lastUpdated": "2026-03-28",
+      "incidentDescription": "During release testing of Atorvastatin Calcium Batch BATCH-2026-045, HPLC chromatographic purity assay revealed related substance Impurity D at 0.28% w/w, exceeding the approved specification limit of NMT 0.15% w/w. Secondary crystallization slurry temperature profile exhibited abnormal 4.2°C oscillation during anti-solvent addition.",
+      "expectedSpecification": "Related Impurity D: NMT 0.15% w/w. Slurry crystallization temperature: 22.0°C ± 1.0°C continuously.",
+      "actualObservation": "Related Impurity D measured at 0.28% w/w (re-test confirmed 0.27% w/w). Anti-solvent feed vessel TT-401 experienced sensor lag and thermal swing up to 26.2°C.",
+      "potentialQualityImpact": "High potential impact on finished formulation shelf-life and stability profile. Potential degraded solubility kinetics in solid oral dosage form.",
+      "immediateContainmentActions": "Quarantine of Batch BATCH-2026-045 placed in Room Q-104 under physical and SAP lock. Upstream intermediate batches BATCH-2026-046 & 047 placed on analytical hold.",
+      "relevantEquipment": "Reactor R-301 (Glass-lined 5000L), Temperature Transmitter TT-401, Cryogenic Chiller Loop CH-02",
+      "rawMaterials": "Methanol USP (Lot MTH-984), Purified Water (Loop PW-01), Anti-solvent Heptane (Lot HEP-331)",
+      "processParameters": "Anti-solvent addition rate: 12.5 L/min; Agitation speed: 85 RPM; Crystallization hold time: 4.5 hours",
+      "availableSupportingDocuments": [
+        "QC Certificate of Analysis #CoA-9921",
+        "Batch Manufacturing Record BMR-API-101-045",
+        "DeltaV SCADA Thermal Log R301-20260324",
+        "Maintenance Calibration Record CAL-TT401"
+      ],
+      "evidenceCompleteness": 88,
+      "dataSource": "Demonstration / Synthetic Training Data"
+    },
+    {
+      "id": "INV-2026-002",
+      "deviationRef": "DEV-API-2026-038",
+      "productName": "API-204 (Esomeprazole Magnesium Dihydrate)",
+      "apiName": "Esomeprazole Magnesium",
+      "batchNumber": "BATCH-2026-038",
+      "manufacturingStage": "Centrifugation & Fluid Bed Drying",
+      "incidentDate": "2026-03-18",
+      "dateDetected": "2026-03-18",
+      "reportedBy": "K. Tanaka (Process Chemist)",
+      "assignedInvestigator": "Dr. Samantha Wei (QA Manager)",
+      "severity": "Moderate",
+      "priority": "Medium",
+      "status": "In Progress",
+      "lastUpdated": "2026-03-27",
+      "incidentDescription": "Net batch yield was 64.2% against theoretical validation baseline of 82.0% - 87.0%. Excessive cake heel retention observed in Peeler Centrifuge PC-102 basket mesh with partial blinding.",
+      "expectedSpecification": "Yield: 82.0% - 87.0%; Residual mother liquor moisture: NMT 4.5%",
+      "actualObservation": "Yield was 64.2%. 48.5 kg unpeeled wet mass remained adhered to centrifuge filter cloth backing screen.",
+      "potentialQualityImpact": "Substantial batch economic loss; required solvent washing risk assessment on residual cake integrity.",
+      "immediateContainmentActions": "Cake heel sampled and isolated. Filter mesh disassembled for metallurgical and fiber elongation audit.",
+      "relevantEquipment": "Peeler Centrifuge PC-102, Fluid Bed Dryer FBD-04",
+      "rawMaterials": "Isopropanol HPLC Grade, Magnesium Methoxide 8% in Methanol",
+      "processParameters": "Basket speed: 1200 RPM, Nitrogen blanket pressure: 15 mbar, Wash ratio: 1.8 L/kg",
+      "availableSupportingDocuments": [
+        "Centrifuge Maintenance History 2025-2026",
+        "Yield Discrepancy Memo YD-204-01",
+        "Filter Cloth Inspection Certificate"
+      ],
+      "evidenceCompleteness": 75,
+      "dataSource": "Demonstration / Synthetic Training Data"
+    },
+    {
+      "id": "INV-2026-003",
+      "deviationRef": "DEV-API-2026-052",
+      "productName": "API-305 (Dexamethasone Sodium Phosphate Sterile Grade)",
+      "apiName": "Dexamethasone Sodium Phosphate",
+      "batchNumber": "BATCH-2026-052",
+      "manufacturingStage": "Micronization & Sterile Barrier Packaging",
+      "incidentDate": "2026-03-10",
+      "dateDetected": "2026-03-12",
+      "reportedBy": "Microbiology QC Team",
+      "assignedInvestigator": "Marcus Vance (Senior Quality Investigator)",
+      "severity": "Critical",
+      "priority": "High",
+      "status": "CAPA Execution",
+      "lastUpdated": "2026-03-26",
+      "incidentDescription": "Bioburden bio-indicator and bacterial endotoxin testing on post-jet-milled API sample exceeded alert threshold (0.45 EU/mg vs alert limit of 0.25 EU/mg; specification limit is 0.50 EU/mg).",
+      "expectedSpecification": "Bacterial Endotoxin: NMT 0.25 EU/mg (internal alert limit), NMT 0.50 EU/mg (compendial release limit)",
+      "actualObservation": "Measured 0.45 EU/mg in final milling hopper composite sample.",
+      "potentialQualityImpact": "High risk of injectable finished product pyrogenic contamination if reconstituted into parenteral vials.",
+      "immediateContainmentActions": "Batch placed on Critical Quarantine. Jet mill nitrogen supply inline 0.2µm sterile gas filters isolated for integrity testing.",
+      "relevantEquipment": "Spiral Jet Mill JM-03, Isolator Glove Box ISO-01, Sterile Nitrogen Supply Line N2-Sterile",
+      "rawMaterials": "Pharmaceutical Grade Nitrogen, Sterile HDPE Liners",
+      "processParameters": "Grinding pressure: 7.2 bar, Feed rate: 4.8 kg/hr, Isolator Differential Pressure: +45 Pa",
+      "availableSupportingDocuments": [
+        "LAL Endotoxin Assay Sheets",
+        "Filter Integrity DOP & Bubble Point Test",
+        "HVAC Cleanroom Particle Count Log"
+      ],
+      "evidenceCompleteness": 92,
+      "dataSource": "Demonstration / Synthetic Training Data"
+    },
+    {
+      "id": "INV-2026-004",
+      "deviationRef": "DEV-API-2026-019",
+      "productName": "API-402 (Metformin HCl Direct Compression)",
+      "apiName": "Metformin Hydrochloride",
+      "batchNumber": "BATCH-2026-019",
+      "manufacturingStage": "Continuous Rotary Drying",
+      "incidentDate": "2026-02-14",
+      "dateDetected": "2026-02-14",
+      "reportedBy": "Shift Supervisor B. Patel",
+      "assignedInvestigator": "Dr. Samantha Wei (QA Manager)",
+      "severity": "Minor",
+      "priority": "Low",
+      "status": "Closed",
+      "lastUpdated": "2026-03-01",
+      "incidentDescription": "Loss on Drying (LOD) parameter transient alarm triggered at 0.62% (Target: NMT 0.50%). Operator paused discharge conveyor for 12 minutes to adjust heated air velocity.",
+      "expectedSpecification": "LOD: NMT 0.50%",
+      "actualObservation": "Transient alarm for 7 minutes, settled back to 0.38% after air velocity stabilization.",
+      "potentialQualityImpact": "Negligible. Re-blend uniformity confirmed acceptable moisture across entire composite.",
+      "immediateContainmentActions": "Sampled drum 01 to 05 separately; all passed specification.",
+      "relevantEquipment": "Rotary Drum Dryer RD-01, Infrared Moisture Meter IR-02",
+      "rawMaterials": "Dimethylamine HCl, Dicyandiamide",
+      "processParameters": "Inlet air temperature: 95°C, Drum speed: 6 RPM",
+      "availableSupportingDocuments": [
+        "SCADA Trend Log RD-01",
+        "In-Process Moisture Sampling Sheet"
+      ],
+      "evidenceCompleteness": 100,
+      "dataSource": "Demonstration / Synthetic Training Data"
+    }
+  ],
+  "rcaRecords": {
+    "INV-2026-001": {
+      "fiveWhys": [
+        {
+          "step": 1,
+          "question": "Why did Batch BATCH-2026-045 fail the purity specification for Impurity D (0.28% vs NMT 0.15%)?",
+          "evidence": "QC CoA #CoA-9921 HPLC chromatogram peak area retention time 14.2 min.",
+          "aiAnswer": "Elevated levels of related substance Impurity D formed during secondary crystallizer slurry nucleation.",
+          "verificationStatus": "Verified Fact",
+          "userNotes": "Confirmed by dual HPLC assay runs in QC Laboratory."
+        },
+        {
+          "step": 2,
+          "question": "Why was Impurity D formed at higher rates during crystallization?",
+          "evidence": "DeltaV SCADA trend log reveals 4.2°C exothermic temperature oscillation up to 26.2°C during heptane anti-solvent addition.",
+          "aiAnswer": "The localized reaction mixture temperature exceeded the thermal degradation threshold of 23.5°C during anti-solvent dosing.",
+          "verificationStatus": "Verified Fact",
+          "userNotes": "Kinetics study previously showed Impurity D doubling rate per +3°C above 23°C."
+        },
+        {
+          "step": 3,
+          "question": "Why did the slurry temperature elevate to 26.2°C rather than maintaining 22.0°C ± 1.0°C?",
+          "evidence": "Cryogenic Chiller valve modulation logs show chilled glycol flow valve CV-102 failed to open beyond 28% despite thermal demand signal.",
+          "aiAnswer": "The cooling jacket feedback loop experienced pneumatic actuator mechanical sticking.",
+          "verificationStatus": "Verified Fact",
+          "userNotes": "Actuator stem had minor grease solidification and particulate accumulation."
+        },
+        {
+          "step": 4,
+          "question": "Why did the cooling valve actuator stick during this manufacturing campaign?",
+          "evidence": "Work Order #WO-8831 indicates preventive maintenance was deferred by 45 days due to campaign scheduling pressure.",
+          "aiAnswer": "Preventive valve stem refurbishment and lubricant replacement exceeded the validated 180-day service interval.",
+          "verificationStatus": "Verified Fact",
+          "userNotes": "Maintenance interval extended without formal Quality Risk Assessment (QRA)."
+        },
+        {
+          "step": 5,
+          "question": "Why was preventive maintenance deferred without a formal Quality Risk Assessment?",
+          "evidence": "Standard Operating Procedure SOP-MAINT-044 did not mandate QA approval for scheduling deferrals under 60 days.",
+          "aiAnswer": "Procedural governance gap in engineering maintenance deferral policy allowed critical GMP utility equipment maintenance postponement without quality risk evaluation.",
+          "verificationStatus": "Verified Root Cause",
+          "userNotes": "Confirmed systemic procedural root cause requiring immediate SOP revision and change control."
+        }
+      ],
+      "fishbone": {
+        "man": [
+          {
+            "factor": "Operators did not manually abort anti-solvent addition when temperature crossed 24°C alarm threshold",
+            "evidence": "SCADA alarm acknowledged but feed continued for 14 minutes",
+            "type": "Contributing Factor"
+          },
+          {
+            "factor": "Shift handover communication lacked specific alert on sticky valve behavior noted on prior batch",
+            "evidence": "Shift logbook entries BMR-044 & BMR-045",
+            "type": "Contributing Factor"
+          }
+        ],
+        "machine": [
+          {
+            "factor": "Control valve CV-102 pneumatic actuator mechanical stem binding",
+            "evidence": "Actuator disassembly bench test report",
+            "type": "Root Cause"
+          },
+          {
+            "factor": "Temperature transmitter TT-401 experienced 18-second thermal lag in thermowell oil bath",
+            "evidence": "Calibration calibration audit CAL-TT401",
+            "type": "Contributing Factor"
+          }
+        ],
+        "method": [
+          {
+            "factor": "SOP-MAINT-044 allowed maintenance deferral without mandatory QA risk assessment sign-off",
+            "evidence": "SOP revision 3.1 section 6.2 review",
+            "type": "Root Cause"
+          },
+          {
+            "factor": "Lack of automatic feed interlock cut-off on crystallization reactor over-temperature alarm",
+            "evidence": "PLC logic review DeltaV FBD-R301",
+            "type": "Contributing Factor"
+          }
+        ],
+        "material": [
+          {
+            "factor": "Heptane anti-solvent lot HEP-331 temperature was 24.8°C at bulk storage drum",
+            "evidence": "Warehouse ambient temperature log",
+            "type": "Contributing Factor"
+          },
+          {
+            "factor": "Intermediate API crude cake purity was normal (99.4%)",
+            "evidence": "CoA #INTR-8891 - Ruled out",
+            "type": "Confirmed Fact"
+          }
+        ],
+        "measurement": [
+          {
+            "factor": "HPLC method system suitability passed all RSD and resolution criteria",
+            "evidence": "QC analytical run logbook #QC-HPLC-09",
+            "type": "Confirmed Fact"
+          },
+          {
+            "factor": "Thermowell sensor response time verification not included in routine 6-month calibration checklist",
+            "evidence": "CAL-TT401 procedure review",
+            "type": "Contributing Factor"
+          }
+        ],
+        "motherNature": [
+          {
+            "factor": "Crystallization cleanroom HVAC ambient temperature elevated to 24.5°C during external heatwave",
+            "evidence": "BMS Building Management System report",
+            "type": "Contributing Factor"
+          }
+        ]
+      },
+      "hypotheses": [
+        {
+          "id": "HYP-01",
+          "causeDescription": "Pneumatic valve mechanical sticking on reactor cooling jacket caused localized thermal excursion leading to Impurity D degradation.",
+          "supportingEvidence": "SCADA temperature trend spike, actuator bench test failure, Impurity D kinetics curve.",
+          "opposingEvidence": "No cooling valve alarm triggered on operator HMI.",
+          "missingEvidence": "Thermocouple dual sensor redundant confirmation.",
+          "confidenceLevel": "High (94%)",
+          "status": "Confirmed Root Cause",
+          "classification": "Root Cause"
+        },
+        {
+          "id": "HYP-02",
+          "causeDescription": "Raw material Heptane solvent contamination or lot-to-lot impurity catalytic reaction.",
+          "supportingEvidence": "New solvent drum lot HEP-331 utilized for this specific batch.",
+          "opposingEvidence": "GC residual solvent test passed CoA specification; re-testing confirmed clean solvent blank.",
+          "missingEvidence": "Trace metal ICP-MS screening on heptane lot.",
+          "confidenceLevel": "Low (8%)",
+          "status": "Disproven Hypothesis",
+          "classification": "Unverified Assumption"
+        },
+        {
+          "id": "HYP-03",
+          "causeDescription": "Procedural lack of hard interlock shutting down anti-solvent pump on high-temperature deviation.",
+          "supportingEvidence": "Pump continued dosing for 14 minutes during 25°C - 26.2°C temperature excursion.",
+          "opposingEvidence": "Batch record directed operator to notify supervisor rather than immediate manual e-stop.",
+          "missingEvidence": "Historical run logs for other batches in same campaign.",
+          "confidenceLevel": "High (89%)",
+          "status": "Confirmed Contributing Factor",
+          "classification": "Contributing Factor"
+        }
+      ]
+    }
+  },
+  "evidenceRecords": {
+    "INV-2026-001": [
+      {
+        "id": "EVD-001",
+        "documentName": "QC Certificate of Analysis #CoA-9921",
+        "category": "Laboratory Analytical Report",
+        "date": "2026-03-25",
+        "description": "HPLC purity chromatogram showing Impurity D at 0.28% w/w with peak retention at 14.2 minutes.",
+        "verificationStatus": "Verified Fact",
+        "fileSize": "1.4 MB",
+        "uploadedBy": "Dr. Elena Rostova"
+      },
+      {
+        "id": "EVD-002",
+        "documentName": "Batch Manufacturing Record BMR-API-101-045",
+        "category": "Batch Manufacturing Record",
+        "date": "2026-03-24",
+        "description": "Official production batch record pages 42-58 detailing crystallization anti-solvent addition and operator sign-offs.",
+        "verificationStatus": "Verified Fact",
+        "fileSize": "8.2 MB",
+        "uploadedBy": "Marcus Vance"
+      },
+      {
+        "id": "EVD-003",
+        "documentName": "DeltaV SCADA Thermal Log R301-20260324",
+        "category": "Equipment Automation Log",
+        "date": "2026-03-24",
+        "description": "Continuous 1-second temperature and chilled glycol valve modulation trace demonstrating 4.2°C oscillation.",
+        "verificationStatus": "Verified Fact",
+        "fileSize": "4.5 MB",
+        "uploadedBy": "SCADA System Integration"
+      },
+      {
+        "id": "EVD-004",
+        "documentName": "Preventive Maintenance Calibration Record CAL-TT401",
+        "category": "Maintenance Record",
+        "date": "2026-03-26",
+        "description": "Post-incident calibration and valve actuator mechanical stroke inspection findings confirming stem adhesion.",
+        "verificationStatus": "Verified Fact",
+        "fileSize": "2.1 MB",
+        "uploadedBy": "Engineering Maintenance"
+      },
+      {
+        "id": "EVD-005",
+        "documentName": "Shift Operator Interview Notes - Shift B",
+        "category": "Operator Interview Notes",
+        "date": "2026-03-26",
+        "description": "Structured witness interview with primary crystallizer operator regarding alert acknowledgment and feed pump action.",
+        "verificationStatus": "Under Verification",
+        "fileSize": "420 KB",
+        "uploadedBy": "Marcus Vance"
+      }
+    ]
+  },
+  "capaActions": [
+    {
+      "id": "CAPA-2026-001",
+      "investigationId": "INV-2026-001",
+      "actionCategory": "Corrective Action",
+      "actionDescription": "Rebuild and re-calibrate cooling control valve CV-102 on Reactor R-301 with fluoropolymer high-temp seals and pneumatic actuator replacement.",
+      "scientificJustification": "Eliminates mechanical friction and hysteresis in glycol flow modulation, restoring thermal response time to under 4 seconds.",
+      "responsiblePerson": "Arthur Dent (Chief Engineering Lead)",
+      "priority": "High",
+      "targetCompletionDate": "2026-04-15",
+      "currentStatus": "In Progress",
+      "verificationMethod": "Post-overhaul 10-point stroke verification and 4-hour mock crystallization water-run temperature stability qualification (±0.5°C).",
+      "effectivenessCheck": "Review 3 consecutive commercial API-101 batches post-restart for temperature stability and Impurity D levels.",
+      "completionDate": null
+    },
+    {
+      "id": "CAPA-2026-002",
+      "investigationId": "INV-2026-001",
+      "actionCategory": "Preventive Action",
+      "actionDescription": "Implement automated PLC safety interlock in DeltaV DCS to immediately pause anti-solvent feed pump P-201 if crystallization slurry temperature exceeds 23.5°C for >30 seconds.",
+      "scientificJustification": "Prevents human latency and ensures kinetic window for Impurity D synthesis cannot be breached during unexpected utility interruptions.",
+      "responsiblePerson": "Ilya Sorkin (Automation Validation Engineer)",
+      "priority": "High",
+      "targetCompletionDate": "2026-04-25",
+      "currentStatus": "Under Review",
+      "verificationMethod": "IQ/OQ software change control protocol and challenge test with simulated high-temp sensor input.",
+      "effectivenessCheck": "Zero occurrences of uninhibited feed during thermal alarms over 12 months.",
+      "completionDate": null
+    },
+    {
+      "id": "CAPA-2026-003",
+      "investigationId": "INV-2026-001",
+      "actionCategory": "Preventive Action",
+      "actionDescription": "Revise SOP-MAINT-044 (Equipment Maintenance Scheduling & Deferrals) to mandate Quality Assurance approval and formal Quality Risk Assessment (ICH Q9) for any calibration or PM deferral on GMP-critical systems.",
+      "scientificJustification": "Closes organizational governance vulnerability that permitted critical utility maintenance postponement without quality impact evaluation.",
+      "responsiblePerson": "Dr. Samantha Wei (QA Manager)",
+      "priority": "Medium",
+      "targetCompletionDate": "2026-04-30",
+      "currentStatus": "Proposed",
+      "verificationMethod": "Quality Management System document release and mandatory training records for 100% of engineering and operations personnel.",
+      "effectivenessCheck": "Quarterly QA audit of all maintenance work orders for compliance with deferral approval protocol.",
+      "completionDate": null
+    },
+    {
+      "id": "CAPA-2026-004",
+      "investigationId": "INV-2026-003",
+      "actionCategory": "Corrective Action",
+      "actionDescription": "Replace spiral jet mill JM-03 sterile nitrogen intake 0.2µm PTFE hydrophobic cartridge filter and perform pre-use and post-use bubble point integrity test.",
+      "scientificJustification": "Cartridge filter integrity failure allows microscopic ambient spore ingress during gas expansion phase.",
+      "responsiblePerson": "K. Tanaka (Process Chemist)",
+      "priority": "High",
+      "targetCompletionDate": "2026-04-05",
+      "currentStatus": "Approved",
+      "verificationMethod": "Automated Palltronic Flowstar IV integrity test with documented water intrusion pressure curve.",
+      "effectivenessCheck": "Endotoxin testing on 5 sequential milling batches below 0.10 EU/mg.",
+      "completionDate": null
+    }
+  ]
+}
